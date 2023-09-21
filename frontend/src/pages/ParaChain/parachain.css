@@ -1,0 +1,223 @@
+.page-container {
+  display: flex;
+  flex: 1;
+}
+
+.page-container > .left,
+.page-container > .right {
+  display: flex;
+  flex: 1;
+  margin: 20px;
+}
+
+.page-container > .left {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-line);
+  border-radius: 24px;
+  /* padding: 40px; */
+  overflow: hidden;
+}
+
+.page-container > .left > .toolbox {
+  display: flex;
+  justify-content: flex-end;
+  padding: 14px 15px;
+}
+
+.page-container > .left > .toolbox > .reload-button {
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--color-iconNormal);
+}
+
+.page-container > .left > .logs-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+  margin: 20px;
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+.page-container > .left > .logs-wrapper > .log-container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 4px;
+  border-radius: 12px;
+  border: 1px solid var(--color-line);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-textSecondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.page-container > .left > .logs-wrapper > .log-container:hover {
+  border-color: var(--color-outlineHover);
+  background-color: var(--color-bg7);
+}
+
+.page-container > .left > .logs-wrapper > .log-container > .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-container
+  > .left
+  > .logs-wrapper
+  > .log-container
+  > .header
+  > .left {
+    display: flex;
+    gap: 10px;
+  }
+
+.page-container
+  > .left
+  > .logs-wrapper
+  > .log-container
+  > .header
+  > .left
+  > .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid var(--color-line);
+}
+
+.page-container
+  > .left
+  > .logs-wrapper
+  > .log-container
+  > .header
+  > .left
+  > .content {
+  margin: 2px 0px;
+}
+
+.page-container
+  > .left
+  > .logs-wrapper
+  > .log-container
+  > .header
+  > .left
+  > .content
+  > h4 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.page-container
+  > .left
+  > .logs-wrapper
+  > .log-container
+  > .header
+  > .timestamp {
+  display: flex;
+  margin: 4px;
+}
+
+.page-container > .left > .logs-wrapper > .log-container > span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-container > .left > .logs-wrapper > .log-container > span > h4 {
+  color: var(--color-textGray);
+  /* font-family: sans-serif; */
+  font-weight: 500;
+}
+
+.page-container > .right {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-line);
+  border-radius: 24px;
+  gap: 20px;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.page-container > .right > .animated-image {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+
+.page-container > .right > h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 800;
+}
+
+.page-container > .right .selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+}
+
+.page-container > .right > .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.page-container > .right > .row > .col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 3px;
+}
+
+.page-container > .right > .row > .col > p {
+  margin-left: 3px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.page-container > .right > .btns-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1px;
+}
+
+.page-container > .right button {
+  padding: 15px 0px;
+  border: 1px solid var(--color-line);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-bg);
+  transition: all 0.2s ease;
+}
+
+.page-container > .right .training-btn {
+  border-radius: 8px 8px 0px 0px;
+  background-color: var(--color-primaryHover);
+}
+
+.page-container > .right .training-btn:hover {
+  background-color: var(--color-primary);
+}
+
+.page-container > .right .mine-btn {
+  border-radius: 0px 0px 8px 8px;
+  background-color: var(--color-textGray);
+}
+
+.page-container > .right .mine-btn:hover {
+  background-color: var(--color-textWhite);
+}

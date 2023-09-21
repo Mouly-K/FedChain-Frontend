@@ -1,0 +1,176 @@
+@font-face {
+  font-family:'Roboto';
+  font-style:normal;
+  font-weight:400;
+  src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf)format('truetype');
+}
+@font-face {
+  font-family:'Roboto';
+  font-style:normal;
+  font-weight:500;
+  src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc9.ttf)format('truetype');
+}
+@font-face {
+  font-family:'Google Sans';
+  font-style:normal;
+  font-weight:400;
+  src:url(//fonts.gstatic.com/s/googlesans/v58/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJllpyw.ttf)format('truetype');
+}
+@font-face {
+  font-family:'Google Sans';
+  font-style:normal;
+  font-weight:500;
+  src:url(//fonts.gstatic.com/s/googlesans/v58/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrw2IJllpyw.ttf)format('truetype');
+}
+
+:root {
+  font-family: Roboto, system-ui, Google Sans, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  
+  overflow: hidden;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-sell: #F6465D;
+  --color-textSell: #F6465D;
+  --color-sellHover: #FF707E;
+  --color-depthSellBg: #35141D;
+  --color-buy: #0ECB81;
+  --color-textBuy: #0ECB81;
+  --color-buyHover: #32D993;
+  --color-depthBuyBg: #102821;
+  --color-line: #2B3139;
+  --color-outlineHover: #6A4403;
+  --color-primary: #FCD535;
+  --color-primaryHover: #F0B90B;
+  --color-error: #F6465D;
+  --color-errorBg: #35141D;
+  --color-success: #0ECB81;
+  --color-successBg: #102821;
+  --color-disable: #474D57;
+  --color-iconNormal: #848E9C;
+  --color-textWhite: #FFFFFF;
+  --color-textGray: #EAECEF;
+  --color-textBlack: #0B0E11;
+  --color-textPrimary: #EAECEF;
+  --color-textSecondary: #B7BDC6;
+  --color-textThird: #848E9C;
+  --color-textDisabled: #5E6673;
+  --color-textBrand: #F0B90B;
+  --color-textToast: #A37200;
+  --color-bg: #181A20;
+  --color-bg1: #181A20;
+  --color-bg2: #0B0E11;
+  --color-bg3: #2B3139;
+  --color-bg4: #5E6673;
+  --color-bg6: #202630;
+  --color-bg7: #191A1F;
+  --color-popupBg: #1E2329;
+  --color-badgeBg: #2D2A20;
+  --color-selectedBg: #1E2026;
+  --color-gradientBrand: linear-gradient(180deg, #F8D12F 0%, #F0B90B 100%);
+  --color-gradientPrimary: linear-gradient(295.27deg, #15141A 0%, #474D57 84.52%);
+  --color-BasicBg: #181A20;
+  --color-SecondaryBg: #0B0E11;
+  --color-Input: #2B3139;
+  --color-InputLine: #474D57;
+  --color-CardBg: #1E2329;
+  --color-Vessel: #1E2329;
+  --color-Line: #2B3139;
+  --color-DisableBtn: #2B3139;
+  --color-DisabledText: #5E6673;
+  --color-TertiaryText: #848E9C;
+  --color-SecondaryText: #B7BDC6;
+  --color-PrimaryText: #EAECEF;
+  --color-RedGreenBgText: #FFFFFF;
+  --color-TextOnGray: #EAECEF;
+  --color-TextOnYellow: #202630;
+  --color-IconNormal: #848E9C;
+  --color-LiteBg1: #202630;
+  --color-LiteBg2: #191A1F;
+  --color-BtnBg: #FCD535;
+  --color-PrimaryYellow: #F0B90B;
+  --color-TextLink: #F0B90B;
+  --color-TextToast: #A37200;
+  --color-DepthSellBg: #35141D;
+  --color-SellHover: #FF707E;
+  --color-Sell: #F6465D;
+  --color-TextSell: #F6465D;
+  --color-DepthBuyBg: #102821;
+  --color-BuyHover: #32D993;
+  --color-Buy: #0ECB81;
+  --color-TextBuy: #0ECB81;
+  --color-ErrorBg: #35141D;
+  --color-Error: #F6465D;
+  --color-SuccessBg: #102821;
+  --color-Success: #0ECB81;
+  --color-TagBg: #474D57;
+  --color-Grid: #2B3139;
+  --color-Placeholder: #474D57;
+  --color-ToastBg: #707A8A;
+  --color-TwoColorIcon: #CACED3;
+  --color-BadgeBg: rgba(240,185,11,0.1);
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--color-bg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	color: inherit;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+button:disabled,
+button[disabled] {
+  cursor: disabled;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.app-wrapper > .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.app-wrapper > .app-container {
+  display: flex;
+  flex: 1;
+}
